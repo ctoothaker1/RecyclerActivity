@@ -10,8 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //val numbers  = Array<Int> [1,2,3,4,5,6]
-
         // TODO Step 1: Reference RecyclerView object
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
 
@@ -21,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         //recyclerView.adapter =
 
         //TODO Step 4: Provide a RecyclerView.Adapter
-        val numbers  = arrayOf(1,2,3,4,5,6)
+        val numbers  = intArrayOf(10,20,30,40,50,60)
         recyclerView.adapter = NumberDisplayAdapter(numbers)
 
     }
